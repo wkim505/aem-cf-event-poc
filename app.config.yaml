@@ -1,0 +1,35 @@
+application:
+  actions: actions
+  runtimeManifest:
+    packages:
+      aem-cf-events:
+        license: Apache-2.0
+        actions:
+          aem-event-processor:
+            function: actions/aem-event-processor/index.js
+            # Must be non-web: I/O Events only offers non-web actions in the
+            # "Runtime action" delivery dropdown, and wraps them in a sequence
+            # behind its own signature validator.
+            web: 'no'
+            runtime: nodejs:22
+            inputs:
+              LOG_LEVEL: debug
+              AEM_AUTHOR_HOST: $AEM_AUTHOR_HOST
+              DESTINATION_URL: $DESTINATION_URL
+              IMS_CLIENT_ID: $IMS_OAUTH_S2S_CLIENT_ID
+              IMS_CLIENT_SECRET: $IMS_OAUTH_S2S_CLIENT_SECRET
+              IMS_SCOPES: $IMS_OAUTH_S2S_SCOPES
+              MAX_RETRIES: 3
+              INCLUDE_RAW_EVENT: true
+            annotations:
+              require-adobe-auth: false
+              final: true
+          event-sink:
+            function: actions/event-sink/index.js
+            web: 'yes'
+            runtime: nodejs:22
+            inputs:
+              LOG_LEVEL: debug
+            annotations:
+              require-adobe-auth: false
+              final: true

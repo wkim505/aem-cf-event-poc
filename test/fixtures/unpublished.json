@@ -1,0 +1,27 @@
+{
+  "specversion": "1.0",
+  "id": "c360564a-aca4-4387-962a-d753db2ffd2a",
+  "source": "acct:aem-p44170-e1385458@adobe.com",
+  "type": "aem.sites.contentFragment.unpublished",
+  "datacontenttype": "application/json",
+  "dataschema": "https://ns.adobe.com/xdm/aem/sites/events/content-fragment-unpublished.json",
+  "time": "2026-08-20T01:41:48.85112395Z",
+  "eventid": "2d61bd44-d15a-48f2-bfa3-0e58a16a20db",
+  "event_id": "2d61bd44-d15a-48f2-bfa3-0e58a16a20db",
+  "recipient_client_id": "9d74b0ab84364105ab21405191053afa",
+  "recipientclientid": "9d74b0ab84364105ab21405191053afa",
+  "data": {
+    "user": {
+      "principalId": "workflow-process-service"
+    },
+    "path": "/content/dam/io-events-poc/test2",
+    "sourceUrl": "https://publish-p44170-e1385458.adobeaemcloud.com",
+    "model": {
+      "id": "L2NvbmYvc2FtcGxlLXdrbmQtYXBwL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL3RleHRpdGVt",
+      "path": "/conf/sample-wknd-app/settings/dam/cfm/models/textitem"
+    },
+    "id": "096d4bb5-bbe4-4600-bdd8-b6d6c3353ee6",
+    "tags": [],
+    "tier": "publish"
+  }
+}

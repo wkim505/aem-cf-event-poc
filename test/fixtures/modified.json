@@ -1,0 +1,34 @@
+{
+  "specversion": "1.0",
+  "id": "d3a95beb-d606-49e7-aaf4-125ce8ac20dd",
+  "source": "acct:aem-p44170-e1385458@adobe.com",
+  "type": "aem.sites.contentFragment.modified",
+  "datacontenttype": "application/json",
+  "dataschema": "https://ns.adobe.com/xdm/aem/sites/events/content-fragment-modified.json",
+  "time": "2026-08-20T01:40:00.479561509Z",
+  "eventid": "49d9cb96-75ed-46a1-bda3-d079ad3d4cb9",
+  "event_id": "49d9cb96-75ed-46a1-bda3-d079ad3d4cb9",
+  "recipient_client_id": "9d74b0ab84364105ab21405191053afa",
+  "recipientclientid": "9d74b0ab84364105ab21405191053afa",
+  "data": {
+    "user": {
+      "imsUserId": "ims-6795283963C8B61E0A495C7E@67ce28aa63c8b61d495fa8.e",
+      "principalId": "Derek.Kim@Datacom.co.nz",
+      "displayName": "Woo Sang Kim"
+    },
+    "path": "/content/dam/io-events-poc/test2",
+    "sourceUrl": "https://author-p44170-e1385458.adobeaemcloud.com",
+    "model": {
+      "id": "L2NvbmYvc2FtcGxlLXdrbmQtYXBwL3NldHRpbmdzL2RhbS9jZm0vbW9kZWxzL3RleHRpdGVt",
+      "path": "/conf/sample-wknd-app/settings/dam/cfm/models/textitem"
+    },
+    "id": "096d4bb5-bbe4-4600-bdd8-b6d6c3353ee6",
+    "tags": [],
+    "properties": [
+      {
+        "name": "type",
+        "changeType": "added"
+      }
+    ]
+  }
+}
